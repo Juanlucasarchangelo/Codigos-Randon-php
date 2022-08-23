@@ -1,17 +1,10 @@
 <?php
 
-$dia = 1;
+$cont = 0;
 
-switch ($dia){
-    case 1:
-        echo "1";
-        break;
-    case 2:
-        echo "2";
-        break;
-    default:
-        echo "Nada encontrado";
-
+while($cont < 10){
+    $cont++;
+    echo "<br>Contador: " . $cont;
 }
 
 ?>
