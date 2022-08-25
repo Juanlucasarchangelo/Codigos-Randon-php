@@ -10,6 +10,6 @@ function valorAjuste($salario, &$ajuste){
 }
 
 $valorFinal = valorAjuste($salario, $ajuste);
-echo "O meu salario final é de {$valorFinal}, e meu reajuste foi de {$ajuste}";
+echo "O meu final é de {$valorFinal}, e meu reajuste foi de {$ajuste}";
 
 ?>
