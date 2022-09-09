@@ -1,11 +1,17 @@
 <?php
+  $notas = [5, 10, 4];
+  $smTotal = 0;
 
-$num = 1;
+  for($i = 0; $i < count($notas); $i++){
+    $smTotal += $notas[$i];
+  }
 
-if($num %2 == 0){
-  echo "Número par";
-} else {
-  echo "Número impar";
-}
+  $resultado = $smTotal / count($notas);
+
+  if($resultado >= 6){
+    echo "Aprovado, média final {$resultado}";
+  }else{
+    echo "Reprovado, média final {$resultado}";
+  }
 
 ?>
