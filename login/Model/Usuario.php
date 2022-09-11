@@ -2,13 +2,15 @@
 
 class Usuario {
 
+    //Atributos
+
     private $nome;
     private $email;
     private $senha;
     private $data;
 
-    //set = Atribuir
-    //get = Obter
+
+    //Metodos / Funções
 
     public function setNome($nome) {
         $this->nome = $nome;
@@ -35,7 +37,7 @@ class Usuario {
     }
 
     function setSenha($senha) {
-        $this->senha = $senha;
+        $this->senha = md5($senha);
     }
 
     function setData($data) {
