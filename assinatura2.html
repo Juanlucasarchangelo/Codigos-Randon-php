@@ -1,0 +1,112 @@
+<style>
+    .fundo{
+        background-image: url('https://img.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_53876-136510.jpg?w=360&t=st=1663873445~exp=1663874045~hmac=ad63ac76dc17e5a97647ce118fe2bb56bccf2d23aaa8c5aed3be7e8fa0529e72');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15px;
+    }
+    .font1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .font2{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .flex{
+        display: flex;
+    }
+    .cabecalho{
+        text-align: left;
+        margin: 5px 0;
+        color: #A5101C;
+        text-transform: uppercase;
+        justify-content: left;
+        align-items: center;
+    }
+    .cabecalhoPL{
+        flex-direction: column;
+    }
+    .nome{
+        color: #A5101C;
+        font-size: 30px;
+        margin: 5px 0;
+        padding-right: 80px;
+    }
+    .depto{
+        font-weight: 400;
+        color: #A5101C;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    .info{
+        font-weight: 400;
+        margin: 5px 0;
+        color: #A5101C;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .info::before{
+        content: '';
+        position: relative;
+        height: 3px;
+        background: #A5101C;
+        min-width: 30px;
+        margin-right: 10px;
+    }
+    .logo{
+        border-radius: 50px;
+        background-color: #A5101C;
+        padding: 5px;
+        width: 80px;
+        z-index: 1;
+    }
+    .social{
+        text-align: center;
+        display: flex;
+        justify-content: left; 
+        align-items: center; 
+        background-color: E3262E;
+        margin-right: 10px;
+        color: aliceblue;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left:-20px ;
+        z-index: 0;
+        border-radius: 5px;
+    }
+    .bg{
+        background-color: #A5101C;
+    }
+    .p{
+        margin: 8px;
+    }
+</style>
+    <table class="fundo">
+        <tr class="flex cabecalho">
+            <td valign="top" class="flex cabecalhoPL">
+                <h2 class="nome font1">Carlos Hattis</h2>
+                <h5 class="depto font2">Comercial</h5>
+            </td>
+            <td class="flex cabecalhoPL font2">
+                <p class="info">(19) 3090-2255</p>
+                <p class="info">Tip@brasiltipbrasil.com.br</p>
+                <p class="info">tipbrasil.com.br</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr class="flex cabecalho">
+                        <td valign="top" class="flex cabecalhoPL logo">
+                            <img src="https://www.tipbrasil.com.br/wp-content/uploads/2022/02/cropped-logo-tip.png" alt="Tip brasil">
+                        </td>
+                        <td class="flex bg social font2">
+                            <p class="p">tipbrasil.com.br</p>
+                            <p class="p">tipbrasil.com.br</p>
+                            <p class="p">tipbrasil.com.br</p>
+                        </td>
+                    </tr> 
+                </table>
+            </td>
+        </tr>  
+    </table>

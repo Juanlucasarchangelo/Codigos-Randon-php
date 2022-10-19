@@ -1,39 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <table>
-        <tr>
-            <td>
-                <div style="padding-right: 40px; padding-left: 40px;">
-                    <h1 style="text-align: center; text-transform: uppercase;">Em breve a</h1>
-                    <h1 style="text-align: center; text-transform: uppercase;">Ecoclear será higisim</h1>
-                    <div style="text-align: center;">
-                        <a href="https://ecoclear.com.br" target="_blank"><img src="https://ecoclear.com.br/site/wp-content/uploads/2020/04/Logo-Ecoclear.png" width="100px" alt="Ecó clear" class="imagem"></a>
-                        <a href="https://higisim.com.br" target="_blank"><img src="https://higisim.com.br/wp-content/uploads/2022/08/Logo-Higi-sim-300x134.png" width="150px" alt="higi sim"></a>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div style="background-color: #00C2FC; border-radius: 50px 0px 0px 50px; padding: 10px 30px 30px 30px; color: #ffffff;">
-                    <h1 class="nome">Alcir Pereira</h1>
-                    <p>Consultor de Vendas</p>
-                    <img src="https://higisim.com.br/wp-content/uploads/2022/08/telefone-1.png" style="padding-right: 10px;" width="20px" alt="telefone">(19) 3552.4002</img><br>
-                    <img src="https://higisim.com.br/wp-content/uploads/2022/08/whatsapp.png" style="padding-right: 10px;" width="20px" alt="telefone">(19) 9 9983.8599</img><br>
-                    <img src="https://higisim.com.br/wp-content/uploads/2022/08/o-email.png" style="padding-right: 10px;" width="20px" alt="telefone">consultor6@higisim.com.br</img><br>
-                    <img src="https://higisim.com.br/wp-content/uploads/2022/08/internet.png" style="padding-right: 10px;" width="20px" alt="telefone"><a href="www.higisim.com.br" style="color:aliceblue"><b>higisim.com.br</a></b></img><br>
-                    <hr style="border-top: 1px solid rgb(255 255 255); margin-right: 300px">
-                    <a href="https://www.facebook.com/EcoClearBr/" target="_blank"><img src="https://higisim.com.br/wp-content/uploads/2022/08/facebook.png" width="30px" alt="facebook" style="padding: 0px 5px 0px 0px "></a>
-                    <a href="https://www.instagram.com/ecoclear/" target="_blank"><img src="https://higisim.com.br/wp-content/uploads/2022/08/instagram.png" width="30px" alt="instagran" style="padding: 8px 9px 0px 0px"></a>
-                    <a href="https://www.linkedin.com/company/ecoclear/" target="_blank"><img src="https://higisim.com.br/wp-content/uploads/2022/08/linkedin.png" width="35px" alt="linkedin" style="padding: 0px 9px 0px 1px"></a>
-                    <a href="https://www.youtube.com/channel/UCQtCd8iBsIfR1iveBqikr8g" target="_blank"><img src="https://higisim.com.br/wp-content/uploads/2022/08/youtube.png" width="35px" alt="youtube" style="padding: 0px 0px 0px 1px"></a>
-                </div>
-            </td>
-        </tr>
-    </table>
-</body>
-</html>
+<style>
+    .info{
+   display: flex;
+   justify-content: left; /* centraliza o texto horizontalmente */
+   align-items: center; /* centraliza as linhas verticalmente */
+   margin: 5px 0; /* 30px -> margens superior e inferior */
+   color: E3262E;
+}
+.nome{
+   text-transform:uppercase;;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: E3262E;
+   font-size: 30px;
+   display: flex;
+   justify-content: left; /* centraliza o texto horizontalmente */
+   align-items: center; /* centraliza as linhas verticalmente */
+   margin: 5px 0; /* 30px -> margens superior e inferior */
+}
+.depto{
+   text-transform:uppercase;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: E3262E;
+   font-size: 18px;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   margin: 5px 0;
+}
+p{
+    text-transform: uppercase;
+    font-size: 18;
+    display: flex;
+    justify-content: left; 
+    align-items: initial;
+}
+.social{
+    text-align: center;
+    display: flex;
+    justify-content: left; 
+    align-items: center; 
+    background-color: E3262E;
+    margin-right: 10px;
+    color: aliceblue;
+}
+.info::before{
+
+   content: '';
+   position: relative;
+   height: 4px; /* espessura das linhas */
+   background: #E3262E; /* cor das linhas */
+   min-width: 30px; /* largura mínima das linhas */
+   margin-right: 10px;
+}
+.logo{
+    width:10px;
+}
+.nometd{
+    width: 35%;
+}
+.fundo{
+    background-image: url('https://img.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_53876-136510.jpg?w=360&t=st=1663873445~exp=1663874045~hmac=ad63ac76dc17e5a97647ce118fe2bb56bccf2d23aaa8c5aed3be7e8fa0529e72');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+</style>
+
+<table class="fundo">
+    <tr>
+        <td valign="top" class="nometd">
+            <h2 class="nome" >Carlos Hattis</h2>
+            <h5 class="depto">Comercial</h5>
+        </td>
+        <td style=" font-family:tahoma,arial,verdana; font-size:12px; padding-left:30px; padding-bottom: 30px;">
+            <p class="info">(19) 3090-2255</p>
+            <p class="info">Tip@brasiltipbrasil.com.br</p>
+            <p class="info">tipbrasil.com.br</p>
+        </td>
+    </tr>  
+    <tr>
+        <td class="logo">
+            <table>
+                <tr>
+                    <td>
+                        <img src="https://www.tipbrasil.com.br/wp-content/uploads/2022/02/cropped-logo-tip.png" width="80px" alt="Tip brasil" style="background-color: E3262E; border-radius: 50px; padding: 5px;">
+                    </td>
+                    <td class="social">
+                        <p>tipbrasil.com.br</p>
+                        <p>tipbrasil.com.br</p>
+                        <p>tipbrasil.com.br</p>
+                    </td>
+                </tr>
+            <table>
+        </td>
+    </tr>
+</table>
