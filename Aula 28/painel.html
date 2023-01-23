@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="easy.css">
 
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/af60b92010.js" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
             </div>
 
             <div class="row align-items-start">
-                <div class="col-3 bg-white p-4 rounded-4">
+                <div class="col-3 bg-white p-4 sticky-top rounded-4">
                     <div class="container text-center">
                         <div class="row mb-3">
                             <div class="col">
@@ -162,7 +162,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <h5 class="text-secondary">Dados pessoais</h5>
+                                <h5 class="text-secondary">Contato com cliente</h5>
                             </div>
                                     <div class="col-auto text-white text-center">
                                         <button type="button" class="btn btn-secondary rounded-pill"
@@ -171,36 +171,21 @@
                                         </button>
                                     </div>
                         </div>
-                        <div class="row">
-                            <div class="col-auto">
-                                <strong><h5>CPF</h5></strong>
-                            </div>
-                            <div class="col-auto">
-                                <span>456.916.448-07</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-auto">
-                                <strong><h5>E-mail</h5></strong>
-                            </div>
-                            <div class="col-auto">
-                                <span>juan.archangelo@tipbrasil.com.br</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-auto">
-                                <strong><h5>Telefone</h5></strong>
-                            </div>
-                            <div class="col-auto">
-                                <span>(19) 98877-0021</span>
-                            </div>
+                        <div>
+                            <label for="floatingPassword">Mandar mensagem por: </label>
+                            <select class="form-select rounded-pill p-2"" aria-label="Default select example">
+                                <option selected>Opções</option>
+                                <option value="1">SMS</option>
+                                <option value="1">E-mail</option>
+                                <option value="1">Telefone</option>
+                            </select>
                         </div>
                     </div>
                     <!-- Fim Contato Cliente -->
                 </div>
 
                 <div class="col-9">
-                    <div class="container bg-white rounded-4 p-4">
+                    <div class="container bg-white rounded-4 p-4 mb-3">
                         <div class="row align-items-start">
                             <div class="col">
                                 <div class="row">
@@ -313,35 +298,34 @@
 
                     <div class="container">
                         <div class="row mb-3">
-                          <div class="col bg-white rounded-4 text-center p-3">
-                            <h4 class="pb-3">Saldo de Dados</h4>
-                            <div class="row text-center">
-                                <div class="col-2">
-                                    <i class="fa fa-refresh fa-lg" style="color: green;" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-8">
-                                    <span class="bg-secondary bg-opacity-25 rounded-pill px-5 pb-2 pt-2">5,26GB</span><br>
-                                </div>
-                                <div class="col-2"> <!-- Apenas para identar --> </div>
-                            </div>
-
-                            <button type="button" class="btn btn-secondary btn-sm mt-4">Detalhamento</button>
-                          </div>
-                          <div class="col bg-white rounded-4 text-center p-3">
-                            <h4 class="pb-3">Consumo de Minutos</h4>
-                            <div class="row text-center">
-                                <div class="col-2">
-                                    <i class="fa fa-refresh fa-lg" style="color: green;" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-8">
-                                    <span class="bg-secondary bg-opacity-25 rounded-pill px-5 pb-2 pt-2">63 Min.</span><br>
-                                </div>
-                                <div class="col-2"> <!-- Apenas para identar --> </div>
-                            </div>
-
-                            <button type="button" class="btn btn-secondary btn-sm mt-4">Detalhamento</button>
-                          </div>
                             <div class="col bg-white rounded-4 text-center p-3">
+                                <h4 class="pb-3">Saldo de Dados</h4>
+                                <div class="row text-center">
+                                    <div class="col-2">
+                                        <i class="fa fa-refresh fa-lg" style="color: green;" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="bg-secondary bg-opacity-25 rounded-pill px-5 pb-2 pt-2">5,26GB</span><br>
+                                    </div>
+                                    <div class="col-2"> <!-- Apenas para identar --> </div>
+                                </div>
+                                <button type="button" class="btn btn-secondary btn-sm mt-4">Detalhamento</button>
+                            </div>
+                            <div class="col bg-white rounded-4 text-center p-3 ms-5">
+                                <h4 class="pb-3">Consumo de Minutos</h4>
+                                <div class="row text-center">
+                                    <div class="col-2">
+                                        <i class="fa fa-refresh fa-lg" style="color: green;" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="bg-secondary bg-opacity-25 rounded-pill px-5 pb-2 pt-2">63 Min.</span><br>
+                                    </div>
+                                    <div class="col-2"> <!-- Apenas para identar --> </div>
+                                </div>
+
+                                <button type="button" class="btn btn-secondary btn-sm mt-4">Detalhamento</button>
+                            </div>
+                            <div class="col bg-white rounded-4 text-center p-3 ms-5">
                                 <h4 class="pb-3">Consumo de SMS</h4>
                                 <div class="row text-center">
                                     <div class="col-2">
@@ -359,11 +343,15 @@
                     </div>
                     <!-- Fim Consumo -->
 
-                    <!-- Início Contabil -->
+                    <!-- Início Contabil  e Suporte -->
                     <div class="container pb-3">
                         <div class="row">
-                            <div class="col-auto">
+                            <div class="col-8">
                                 <span>Contabil</span>
+                                <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-4">
+                                <span>Suporte</span>
                                 <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
                             </div>
                         </div>
@@ -371,7 +359,7 @@
 
                     <div class="container">
                         <div class="row">
-                            <div class="col-8 bg-white rounded-4">
+                            <div class="col bg-white rounded-4">
                                 <div class="container p-3">
                                     <div class="row">
                                         <div class="col">
@@ -471,7 +459,7 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <h4>Faturas</h4>
+                                            <h4>Notas Fiscais</h4>
                                             <table class="table table-borderless">
                                                 <tbody>
                                                     <tr>
@@ -570,7 +558,599 @@
                                 </div>
                             </div>
                             
-                            <div class="col-4 bg-white rounded-4 p-4">
+                            <div class="col-4 bg-white rounded-4 p-4 ms-5">
+                                <button type="button" class="btn btn-secondary btn-lg btn-block rounded-4" style="width: 100%;">
+                                    <i class="fa fa-life-ring" aria-hidden="true"></i>
+                                    <span>Abrir Suporte</span>
+                                </button>
+                                <h4 class="pt-4">Ultimos suportes</h4>
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 20px;">
+                                                45616
+                                            </td>
+                                            <td>
+                                                Alteração na tela de usua...
+                                            </td>
+                                            <td style="color:  green;">
+                                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px;">
+                                                45616
+                                            </td>
+                                            <td>
+                                                Alteração na tela de usua...
+                                            </td>
+                                            <td style="color:  green;">
+                                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px;">
+                                                45616
+                                            </td>
+                                            <td>
+                                                Alteração na tela de usua...
+                                            </td>
+                                            <td style="color:  green;">
+                                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px;">
+                                                45616
+                                            </td>
+                                            <td>
+                                                Alteração na tela de usua...
+                                            </td>
+                                            <td style="color:  green;">
+                                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px;">
+                                                45616
+                                            </td>
+                                            <td>
+                                                Alteração na tela de usua...
+                                            </td>
+                                            <td style="color:  green;">
+                                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" placeholder="Pesquisar...">
+                                            <label for="floatingInputGrid">Procurar Suporte</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" style="vertical-align: middle;" class="btn btn-secondary rounded-pill">Buscar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim Contabil -->
+                                        <!-- Início Contabil  e Suporte -->
+                                        <div class="container pb-3">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <span>Contabil</span>
+                                                    <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-4">
+                                                    <span>Suporte</span>
+                                                    <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col bg-white rounded-4">
+                                                    <div class="container p-3">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <h4>Faturas</h4>
+                                                                <table class="table table-borderless">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="form-floating">
+                                                                            <input type="date" class="form-control" id="floatingInputGrid">
+                                                                            <label for="floatingInputGrid">Periodo</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <button type="submit" style="vertical-align: middle;" class="btn btn-secondary rounded-pill">Buscar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <h4>Notas Fiscais</h4>
+                                                                <table class="table table-borderless">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 20px;">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td style="width: 20px; color:  green;">
+                                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                                            </td>
+                                                                            <td>
+                                                                                Julho/2022
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="form-floating">
+                                                                            <input type="date" class="form-control" id="floatingInputGrid">
+                                                                            <label for="floatingInputGrid">Periodo</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <button type="submit" style="vertical-align: middle;" class="btn btn-secondary rounded-pill">Buscar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-4 bg-white rounded-4 p-4 ms-5">
+                                                    <button type="button" class="btn btn-secondary btn-lg btn-block rounded-4" style="width: 100%;">
+                                                        <i class="fa fa-life-ring" aria-hidden="true"></i>
+                                                        <span>Abrir Suporte</span>
+                                                    </button>
+                                                    <h4 class="pt-4">Ultimos suportes</h4>
+                                                    <table class="table table-borderless">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width: 20px;">
+                                                                    45616
+                                                                </td>
+                                                                <td>
+                                                                    Alteração na tela de usua...
+                                                                </td>
+                                                                <td style="color:  green;">
+                                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 20px;">
+                                                                    45616
+                                                                </td>
+                                                                <td>
+                                                                    Alteração na tela de usua...
+                                                                </td>
+                                                                <td style="color:  green;">
+                                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 20px;">
+                                                                    45616
+                                                                </td>
+                                                                <td>
+                                                                    Alteração na tela de usua...
+                                                                </td>
+                                                                <td style="color:  green;">
+                                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 20px;">
+                                                                    45616
+                                                                </td>
+                                                                <td>
+                                                                    Alteração na tela de usua...
+                                                                </td>
+                                                                <td style="color:  green;">
+                                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 20px;">
+                                                                    45616
+                                                                </td>
+                                                                <td>
+                                                                    Alteração na tela de usua...
+                                                                </td>
+                                                                <td style="color:  green;">
+                                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <hr>
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <div class="form-floating">
+                                                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Pesquisar...">
+                                                                <label for="floatingInputGrid">Procurar Suporte</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <button type="submit" style="vertical-align: middle;" class="btn btn-secondary rounded-pill">Buscar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fim Contabil -->
+                                                            <!-- Início Contabil  e Suporte -->
+                    <div class="container pb-3">
+                        <div class="row">
+                            <div class="col-8">
+                                <span>Contabil</span>
+                                <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-4">
+                                <span>Suporte</span>
+                                <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col bg-white rounded-4">
+                                <div class="container p-3">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4>Faturas</h4>
+                                            <table class="table table-borderless">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="floatingInputGrid">
+                                                        <label for="floatingInputGrid">Periodo</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button type="submit" style="vertical-align: middle;" class="btn btn-secondary rounded-pill">Buscar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h4>Notas Fiscais</h4>
+                                            <table class="table table-borderless">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 20px;">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td style="width: 20px; color:  green;">
+                                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                                        </td>
+                                                        <td>
+                                                            Julho/2022
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="floatingInputGrid">
+                                                        <label for="floatingInputGrid">Periodo</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button type="submit" style="vertical-align: middle;" class="btn btn-secondary rounded-pill">Buscar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-4 bg-white rounded-4 p-4 ms-5">
                                 <button type="button" class="btn btn-secondary btn-lg btn-block rounded-4" style="width: 100%;">
                                     <i class="fa fa-life-ring" aria-hidden="true"></i>
                                     <span>Abrir Suporte</span>
