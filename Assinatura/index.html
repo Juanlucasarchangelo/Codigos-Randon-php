@@ -15,9 +15,12 @@
         }
     </style>
   </head>
+  <?php
+    $nome = 'juan';
+  ?>
   <body>
     <div id="htmltoimage">
-        <div class="card w-75 bg-secondary bg-opacity-25 foto-fundo">
+        <div class="card w-100 bg-secondary bg-opacity-25 foto-fundo">
             <div class="card-body d-flex p-4">
                 <div class="col-8">
                     <div class="row align-items-center pb-2">
@@ -92,6 +95,9 @@
         function downloadimage(){
             var container = document.getElementById("htmltoimage"); // full page 
             html2canvas(container,{allowTaint : true}).then(function(canvas) {
+
+                // Faz o download direto no browser
+                
                 // var link = document.createElement("a");
                 // document.body.appendChild(link);
                 // link.download = "assinatura_email_tip.jpg";
@@ -100,11 +106,13 @@
                 // link.click();
                 // link.backgroundColor = null;
                 // link.width = "75%";
+
                 var ajax = new XMLHttpRequest();
                 ajax.open("POST", "save-capture.php", true);
                 ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                ajax.send("jpg=" + canvas.toDataURL("image/jpeg", 0.9));
-                ajax.send("nome = juan");
+                ajax.send("jpg=" + canvas.toDataURL("image/jpeg", 0.9) + "&nome=juan");
+                ajax.send("nome=" + "juan");
+
                 ajax.onreadystatechange = function () {
                 // Check when the requested is completed
                     if (this.readyState == 4 && this.status == 200) {

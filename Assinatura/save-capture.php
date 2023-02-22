@@ -3,6 +3,7 @@
 // Get the incoming image data
 $imagem = $_POST["jpg"];
 $nome = $_POST["nome"];
+// $nome = 'juan';
 
 
 // Remove image/jpeg from left side of image data
@@ -20,7 +21,8 @@ $imagem = str_replace(" ", "+", $imagem);
 $imagem = base64_decode($imagem);
 
 // Save the image as filename.jpeg
-file_put_contents("assinaturas-imagem/assinatura-mail-".rand(1, 50).".jpeg", $imagem);
+// file_put_contents("assinaturas-imagem/assinatura-mail-".rand(1, 50).".jpeg", $imagem);
+file_put_contents("assinaturas-imagem/assinatura-mail-". $nome .".jpeg", $imagem);
 
 // Sending response back to client
 echo "Done";
