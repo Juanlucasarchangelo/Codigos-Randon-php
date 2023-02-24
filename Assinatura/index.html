@@ -87,7 +87,6 @@
                     </div>
                 </div>
                 <div class="col-auto">
-    oi
                 </div>
             </div>
         </div>
@@ -117,12 +116,9 @@
                 ajax.open("POST", "save-capture.php", true);
                 ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                 ajax.send("jpg=" + canvas.toDataURL("image/jpeg", 0.9) + "&nome=juan");
-                ajax.send("nome=" + "juan");
-
+                
                 ajax.onreadystatechange = function () {
-                // Check when the requested is completed
                     if (this.readyState == 4 && this.status == 200) {
-                        // Displaying response from server
                         console.log(this.responseText);
                     }
                 };
